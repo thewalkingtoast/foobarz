@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  css:
+    build: "."
+    image: mpb
+    command: ["yarn", "build:css", "--watch"]
+    tty: true
+    volumes:
+      - ".:/app"
